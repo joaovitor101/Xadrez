@@ -1,10 +1,9 @@
 body{
-    background-color: #4981da;
+    background-color: #32373f;
 }
 
 .tabuleiro{
-    margin-left: 435px;
-    top: 40px;
+    top: 10px;
     position: absolute;
     border: 1px solid;
     width: 640px;
@@ -12,6 +11,7 @@ body{
     flex-wrap: wrap;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.65);
     display: flex;
+    z-index: -1;
 }
 
 
@@ -24,8 +24,76 @@ body{
     background-color: #ebecd0;
 }
 .black{
-    background-color: #000;
+    background-color: #789454;
 }
 
+.cavalo{
+    position: relative;
+    width: 80px;
+    top: 6px;
+    left: 80px;
+    animation: L 10s ease infinite;
+    z-index: 1;
+}
+
+#final{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background:#c34545a6;
+    top: 571px;
+    left: 489px;
+    z-index: 1;
+}
+
+@keyframes L{
+    0%{
+        top: 7px;
+        left: 80px;
+    }
+
+
+    12.5%{
+        top: 82px;
+        left: 80px;
+    }
+
+    25%{
+        top: 82px;
+        left: 240px;
+    }
+
+    37.5%{
+        top: 242px;
+        left: 240px;
+    }
+
+    50%{
+        top: 242px;
+        left: 320px;
+    }
+
+    62.5%{
+        top: 402px;
+        left: 320px;
+    }
+
+    75%{
+        top: 402px;
+        left: 400px;
+    }
+
+    87.5%{
+       top: 562px;
+       left: 400px;
+
+    }
+
+    100%{
+        top: 562px;
+        left: 480px;
+    }
+    
+}
 
 
